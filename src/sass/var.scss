@@ -1,0 +1,43 @@
+:root {
+    /* Font family */
+    --font-title: 'Open Sans', sans-serif;
+    --font-body: 'Lato', sans-serif;
+
+    //Colers usados
+    --color-bg-header: #0B1014;
+    --color-bg-main-dark: #0E1A27;
+    --color-text-title: #E8EBEF;
+    --color-text-primary: #F2F2F2;
+    --color-border: #394046;
+
+    --modal-overlay-bg: rgba(0, 0, 0, 0.10);
+    --modal-bg: rgba(7, 26, 54, 0.92);
+    --modal-border: rgba(255, 255, 255, 0.12);
+
+
+
+    /* Backgrounds principales */
+    --color-bg-main: #071A36;
+    --color-bg-main-blue: #042352;
+    --color-bg-section: #061B3A;
+    --color-bg-section-blue: #05234F;
+
+    /* Superficies */
+    --color-surface: #15191D;
+    --color-surface-light: #24272C;
+
+    /* Azul principal */
+    --color-primary: #0394FD;
+    --color-primary-light: #22A2FA;
+    --color-primary-dark: #0567B4;
+
+    /* Textos */
+    --color-text-secondary: #97A5B3;
+    --color-text-muted: #758B9D;
+
+    /* Acentos */
+    --color-premium: #EFAC1C;
+    --color-success: #2DD46C;
+    --color-badge-bg: #063751;
+    --color-badge-text: #31C196;
+}

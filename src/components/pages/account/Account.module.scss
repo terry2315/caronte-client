@@ -1,0 +1,196 @@
+.account__card {
+    padding: 3rem;
+    border-radius: 10px;
+    border: 1px solid var(--color-border);
+    background-color: var(--color-surface);
+}
+
+.account__section {
+    text-align: left;
+    margin-bottom: 1.5rem;
+}
+
+.account__title {
+    text-align: left;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.account__subtitle {
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--color-text-secondary);
+}
+
+.account__social_buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 1rem 0;
+    width: 100%;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: auto;
+    height: auto;
+}
+
+.form__group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    margin-bottom: 1rem;
+    width: 100%;
+    height: auto;
+}
+
+.form__label {
+    text-align: left;
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+}
+
+.form__input {
+    font-size: 1.4rem;
+    color: var(--color-text-primary);
+    width: 100%;
+    height: 4rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid var(--color-border);
+    outline: none;
+    background-color: var(--color-surface);
+}
+
+.form__input:focus {
+    border-color: var(--color-primary);
+}
+
+.form__password_wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.form__password_wrapper .form__input {
+    padding-right: 4rem;
+}
+
+.form__password_toggle {
+    position: absolute;
+    top: 50%;
+    right: 0.7rem;
+    transform: translateY(-50%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0.4rem;
+    border: none;
+    color: var(--color-text-primary);
+    background-color: transparent;
+    cursor: pointer;
+    transition: 200ms ease-in-out;
+}
+
+.form__password_toggle:hover {
+    color: var(--color-primary);
+}
+
+.account__actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    gap: 1.5rem;
+    width: 100%;
+    height: auto;
+}
+
+.account__password_forgot {
+    position: relative;
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: 300ms ease-in-out;
+}
+
+.account__password_forgot::before {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    content: '';
+    width: 0;
+    height: 1px;
+    background-color: var(--color-primary);
+    transition: 300ms ease-in-out;
+}
+
+.account__password_forgot:hover::before {
+    width: 100%;
+}
+
+.form__submit {
+    padding: 1rem;
+    width: 100%;
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: var(--color-text-title);
+    border: none;
+    border-radius: 4px;
+    background-color: var(--color-primary-light);
+    cursor: pointer;
+    transition: 100ms ease-in-out;
+}
+
+.form__submit:hover {
+    background-color: var(--color-primary);
+}
+
+.account__bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    margin-top: 1.5rem;
+    width: 100%;
+}
+
+.account__bottom_text {
+    font-size: 1.5rem;
+    color: var(--color-text-primary);
+}
+
+.account__bottom_link {
+    position: relative;
+    font-size: 1.5rem;
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+.account__bottom_link::before {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    content: '';
+    width: 0;
+    height: 1px;
+    background-color: var(--color-primary);
+    transition: 300ms ease-in-out;
+}
+
+.account__bottom_link:hover::before {
+    width: 100%;
+}
