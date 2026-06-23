@@ -12,23 +12,6 @@ export const RegisterForm = () => {
         await registerUser(dataToSend);
     };
 
-    //console.log('Datos listos para enviar:', safeLog);
-
-    // Aquí luego conectas con tu backend:
-    // const response = await fetch('http://localhost:5786/api/users/newUser', {
-    //     method: 'POST',
-    //     headers: {
-    //         'Content-Type': 'application/json',
-    //     },
-    //     body: JSON.stringify(dataToSend),
-    // });
-    //
-    // const data = await response.json();
-    //
-    // if (!response.ok) {
-    //     throw new Error(data.message || 'Error al registrar el usuario.');
-    // }
-
 
     const {
         formData,
@@ -223,5 +206,5 @@ export const RegisterForm = () => {
             </div>
         </form>
     );
-
+    
 };
