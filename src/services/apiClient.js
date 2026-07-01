@@ -1,5 +1,3 @@
-
-
 const API_URL = import.meta.env.VITE_API_URL;
 
 export const apiRequest = async (endpoint, options = {}) => {
@@ -7,7 +5,11 @@ export const apiRequest = async (endpoint, options = {}) => {
         throw new Error('Falta configurar VITE_API_URL en las variables de entorno.');
     }
 
-    const response = await fetch(`${API_URL}${endpoint}`, {
+    const finalUrl = `${API_URL}${endpoint}`;
+
+    console.log('URL final enviada:', finalUrl);
+
+    const response = await fetch(finalUrl, {
         ...options,
         headers: {
             'Content-Type': 'application/json',
@@ -25,7 +27,7 @@ export const apiRequest = async (endpoint, options = {}) => {
         throw new Error(
             data?.message ||
             data?.mensaje ||
-            'Error en la petición al servidor.'
+            `Error ${response.status} en la petición al servidor`
         );
     }
 
